@@ -15,6 +15,7 @@ import hashlib
 import urlparse
 import datetime
 import getpass
+import logging
 import tarfile
 import getpass
 from time import sleep
