@@ -9,10 +9,6 @@ parent_dir = os.path.join(os.path.dirname(__file__), os.pardir)
 logging_dir = os.path.join(parent_dir, "logs")
 PATH = os.path.join(logging_dir, "esgf_log.out_{date}".format(date=str(datetime.date.today())))
 
-def create_logging_directory():
-    esg_bash2py.mkdir_p(logging_dir)
-
-
 #----------------------------------------------------------------------
 def create_rotating_log(name="esgf_logger", path=PATH):
     """Creates a rotating log"""
@@ -43,7 +39,6 @@ def create_rotating_log(name="esgf_logger", path=PATH):
 
 
 def main():
-    create_logging_directory()
     create_rotating_log()
 
 if __name__ == '__main__':

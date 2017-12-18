@@ -66,3 +66,12 @@ perl-Archive-Tar perl-XML-Parser libX11-devel libtool-ltdl-devel e2fsprogs-devel
 gcc-gfortran libicu-devel libgtextutils-devel httpd httpd-devel mod_ssl libjpeg-turbo-devel *ExtUtils*
 
 [ $? != 0 ] && printf "[FAIL] \n\tFailed to installed all dependencies from yum\n\n" && return 1
+
+
+echo
+echo "-----------------------------------"
+echo "Creating logging directory"
+echo "-----------------------------------"
+echo
+
+mkdir -p ../logs
