@@ -5,6 +5,7 @@ import os
 import errno
 import re
 import subprocess
+import logging
 from contextlib import contextmanager
 import esg_logging_manager
 
