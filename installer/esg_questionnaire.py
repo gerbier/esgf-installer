@@ -7,7 +7,6 @@ import getpass
 from esg_exceptions import UnverifiedScriptError
 from distutils.spawn import find_executable
 import esg_functions
-import esg_bootstrap
 import esg_property_manager
 import esg_version_manager
 import esg_logging_manager
