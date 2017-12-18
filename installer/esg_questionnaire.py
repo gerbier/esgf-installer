@@ -4,6 +4,7 @@ import socket
 import tld
 import urlparse
 import getpass
+import logging
 from esg_exceptions import UnverifiedScriptError
 from distutils.spawn import find_executable
 import esg_functions
