@@ -10,6 +10,7 @@ import esg_functions
 import esg_property_manager
 import esg_version_manager
 import esg_logging_manager
+import esg_bash2py
 import esg_init
 import yaml
 import semver
