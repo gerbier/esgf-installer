@@ -7,7 +7,7 @@ import errno
 import esg_logging_manager
 import esg_functions
 
-logger = esg_logging_manager.create_rotating_log(__name__)
+logger = logging.getLogger("esgf_logger")
 
 def purge_postgres():
     print "\n*******************************"
