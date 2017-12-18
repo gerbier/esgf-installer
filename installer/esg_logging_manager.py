@@ -20,7 +20,8 @@ def create_rotating_log(name="esgf_logger", path=PATH):
 
 
     # add a rotating handler
-    handler = RotatingFileHandler(path, maxBytes=10*1024*1024,
+    if not os.path.isfile(path):
+        handler = RotatingFileHandler(path, maxBytes=10*1024*1024,
                                   backupCount=5)
 
     console_handler = logging.StreamHandler()
