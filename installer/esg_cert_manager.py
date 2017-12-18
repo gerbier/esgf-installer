@@ -639,6 +639,7 @@ def check_for_commercial_ca(commercial_ca_directory="/etc/esgfcerts"):
 
     if os.listdir(commercial_ca_directory):
         print "Found commercial CA directory."
+        print "Files in directory:", os.listdir(commercial_ca_directory)
         commercial_ca_setup = raw_input("Do you have a commercial CA that you want to install [Y/n]: ") or "yes"
         if commercial_ca_setup.lower() in ["yes", "y"]:
             commercial_key_path = raw_input("Enter the file path of the commercial key: ")
