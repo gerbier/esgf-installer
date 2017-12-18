@@ -14,6 +14,7 @@ import requests
 import esg_functions
 import esg_bash2py
 import yaml
+import logging
 import zipfile
 from git import Repo
 from clint.textui import progress

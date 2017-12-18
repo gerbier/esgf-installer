@@ -5,6 +5,7 @@ import sys
 import os
 import datetime
 import time
+import logging
 from pylint.lint import Run
 from contextlib import contextmanager
 import esg_bash2py

@@ -13,6 +13,7 @@ import grp
 import shlex
 import hashlib
 import urlparse
+import logging
 import glob
 import pwd
 import yaml

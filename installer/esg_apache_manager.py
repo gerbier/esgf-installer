@@ -6,6 +6,7 @@ import socket
 import shlex
 import filecmp
 import git
+import logging
 import esg_bash2py
 import esg_version_manager
 import esg_functions

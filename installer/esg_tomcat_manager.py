@@ -9,6 +9,7 @@ import yaml
 import requests
 import errno
 import getpass
+import logging
 from time import sleep
 import OpenSSL
 from lxml import etree
