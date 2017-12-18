@@ -8,6 +8,7 @@ import pip
 import subprocess
 import grp
 import datetime
+import logging
 import esg_postgres
 import esg_functions
 import esg_property_manager
