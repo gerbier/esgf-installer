@@ -23,10 +23,13 @@ import esg_questionnaire
 import yaml
 
 
-logger = esg_logging_manager.create_rotating_log(__name__)
+# logger = esg_logging_manager.create_rotating_log(__name__)
 
 with open(os.path.join(os.path.dirname(__file__), 'esg_config.yaml'), 'r') as config_file:
     config = yaml.load(config_file)
+
+esg_logging_manager.main()
+logger = logging.getLogger("esgf_logger")
 
 os.environ['LANG'] = "POSIX"
 os.umask(022)
@@ -336,6 +339,7 @@ def main(node_type_list):
     check_for_conda()
     # default distribution_url
     esg_dist_url = "http://aims1.llnl.gov/esgf/dist"
+
 
     # initialize connection
     init_connection()
