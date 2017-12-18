@@ -3,6 +3,7 @@ import os
 import pwd
 import platform
 import socket
+import logging
 import multiprocessing
 import esg_logging_manager
 import yaml
