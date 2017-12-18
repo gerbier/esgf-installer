@@ -4,6 +4,7 @@ import glob
 import subprocess
 import datetime
 import errno
+import logging
 import esg_logging_manager
 import esg_functions
 

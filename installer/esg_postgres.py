@@ -6,6 +6,7 @@ import sys
 import psycopg2
 import getpass
 import configobj
+import logging
 import esg_functions
 import esg_version_manager
 import esg_bash2py
