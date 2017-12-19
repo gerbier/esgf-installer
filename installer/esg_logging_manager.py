@@ -7,7 +7,7 @@ from logging.handlers import RotatingFileHandler
 
 parent_dir = os.path.join(os.path.dirname(__file__), os.pardir)
 logging_dir = os.path.join(parent_dir, "logs")
-PATH = os.path.join(logging_dir, "esgf_log.out_{date}".format(date=str(datetime.date.today())))
+PATH = os.path.join(logging_dir, "esgf_log_{date}.out".format(date=str(datetime.date.today())))
 
 #----------------------------------------------------------------------
 def create_rotating_log(name="esgf_logger", path=PATH):
@@ -26,7 +26,7 @@ def create_rotating_log(name="esgf_logger", path=PATH):
         logger.addHandler(handler)
 
     console_handler = logging.StreamHandler()
-    console_handler.setLevel(logging.ERROR)
+    console_handler.setLevel(logging.DEBUG)
 
     # colored_log_file = open("esgf_colored_log.out", "w")
     # coloredlogs.install(level='DEBUG', logger=logger, stream=colored_log_file)
